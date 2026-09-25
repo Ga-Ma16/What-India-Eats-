@@ -1,6 +1,0 @@
-{
-  "name": "What Does India Eat?",
-  "description": "A Mathematical & Cultural Analysis of 255 Indian Dishes — Probabilistic Modeling, Statistical Distributions, and Interactive Visualizations.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
