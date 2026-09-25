@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bioluminescent-lime: #cef79e;
+  --color-abyssal-ink: #222f30;
+  --color-bone-white: #f7f7f5;
+  --color-paper: #ffffff;
+  --color-graphite: #4d5757;
+  --color-lichen: #c9cbbe;
+  --color-tissue: #e7e8e1;
+  --color-frost: #eeeeee;
+  --color-void: #000000;
+
+  --font-aspekta: 'Inter Tight', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-roboto-mono: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-yatra: 'Yatra One', cursive;
+  --font-rozha: 'Rozha One', serif;
+
+  --text-caption: 13px;
+  --text-body: 16px;
+  --text-body-lg: 18px;
+  --text-subheading: 24px;
+  --text-heading-sm: 32px;
+  --text-heading-lg: 48px;
+  --text-display: 64px;
+  --text-display-xl: 96px;
+  --text-hero: 120px;
+}
+
+:root {
+  --color-bioluminescent-lime: #cef79e;
+  --color-abyssal-ink: #222f30;
+  --color-bone-white: #f7f7f5;
+  --color-paper: #ffffff;
+  --color-graphite: #4d5757;
+  --color-lichen: #c9cbbe;
+  --color-tissue: #e7e8e1;
+  --color-frost: #eeeeee;
+  --color-void: #000000;
+}
+
+body {
+  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  background-color: #172021;
+  color: #f7f7f5;
+  letter-spacing: -0.01em;
+}
+
+.font-mono-tech {
+  font-family: 'Roboto Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbar for laboratory data tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #192324;
+}
+::-webkit-scrollbar-thumb {
+  background: #394747;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cef79e;
+}
+
+/* Atom Menu Orbital CSS Trigonometry classes */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.atom-orbit-container {
+  --radius: 70vmin;
+}
+
+.atom-orbit-node {
+  /* Using native CSS calc, cos, and sin */
+  left: calc(50% + calc(cos(var(--node-angle)) * var(--radius)) - var(--node-half-w, 32px));
+  top: calc(50% + calc(sin(var(--node-angle)) * var(--radius)) - var(--node-half-h, 32px));
+}
